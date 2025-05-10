@@ -1,0 +1,33 @@
+# Go standard ignore patterns
+
+# Compiled binaries and packages
+# Ignore the entire bin directory and its contents
+/bin/
+
+# Other common Go build outputs
+*.a
+*.o
+
+# Go module cache (usually in GOPATH/pkg/mod, but sometimes seen in vendored projects)
+/pkg/
+
+# Dependency directories (if using go modules with vendor or older dependency tools)
+/vendor/
+
+# Test results and coverage
+*.test     # Test executables
+*.out      # go test -o flag output
+coverage.out # go test -coverprofile flag output
+*.cov      # go test -coverprofile flag output
+
+# IDE and editor specific files/folders
+.idea/      # JetBrains IDEs (IntelliJ, GoLand, etc.)
+.vscode/    # VS Code
+*.swp       # Vim swap files
+*~          # Backup files
+.DS_Store   # macOS specific
+Thumbs.db   # Windows specific
+
+# Environment variables or sensitive config files (optional)
+.env
+.env.*
